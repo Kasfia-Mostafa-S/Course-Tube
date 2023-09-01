@@ -4,10 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h3>hello
-    
-  </h3>
+<body class="bg-teal-200 mt-10">
+  <header>
+    <h3 class="text-center text-5xl font-bold text-teal-600">JavaScript Blog</h3>
+  </header>
+  <article class="p-10">
+       <p class="bg-white text-xl p-2 text-teal-800 font-semibold mt-5">
+        Question: Discuss the scope of var, let, and const.</p>
+       <p class="bg-teal-100 mt-5 p-2 text-xl">
+        <span class="font-semibold">Ans :</span> In JavaScript, there are some differences between var, let, and const variable declarations.
+        The scope of variables declared with the var and const keywords is the current function body.
+        The var keyword declares variables that are hoisted. Hoisting describes the ability to access a variable in its surrounding scope even before it has been declared.
+        Let-declared variables are block-scoped, which means that they only apply to the current block in which they are declared.
+        <br>
+        Function scope applies to variables declared with the var keyword. When something is function scoped, it can only be accessible within the function in which it was declared.Hoisting applies to variables that are declared using the var keyword. The JavaScript runtime will move a variable to the top of its scope if we declare it (but do not initialize it) at the conclusion of the function. As a result, the runtime will not object if we use the variable before it has been declared.
+        <br>
+        When you want to declare a variable that should only be accessible within the block in which it is declared, you should use the let keyword. Furthermore, variables created using the let keyword cannot be changed or re-created.The let keyword is used to declare variables that are not subject to hoisting. This signifies that a variable cannot be used until it has been declared and initialized.
+<br>
+Similar guidelines apply to the let keyword and const. Const is similar to other types of definitions, however in JavaScript programs, const is only used to define constant values.The let keyword and const both use the same scoping concepts. Similar to let, the scope of variables declared using the const keyword will be limited to the block in which they are declared.
+
+        </p>
+
+        <p class="bg-white text-xl p-2 text-teal-800 font-semibold mt-5">
+          Question: Tell us the use cases of null and undefined.</p>
+          <p class="bg-teal-100 mt-5 p-2 text-xl">
+            <span class="font-semibold">Ans :</span>
+            The primitive type null denotes a value that is purposefully absent. As a result, in JavaScript, programmers frequently assign null to a variable to indicate that it has been declared, initialized, and is now empty. However, a value can be anticipated along the road. undefined is a primitive value automatically assigned by JavaScript to indicate the unintentional absence of any object value.<br>
+The differences between null and undefined are:
+<br>
+1. JavaScript never automatically assigns null as a value, and it always assigns undefined to denote the lack of a value. Only when a programmer or API explicitly gives the value null to a variable will it return null.
+<br>
+2. JavaScript never automatically assigns null as a value, and it always assigns undefined to denote the lack of a value. Only when a programmer or API explicitly gives the value null to a variable will it return null.
+<br>
+3. Undefined and null are roughly similar, but they are not exactly equal.
+<br>
+4. Despite the fact that JavaScript treats null and undefined as primitive values due to a past mistake, typeof(null) returns "object". However, typeof(undefined) returns "undefined".
+
+          </p>
+
+          <p class="bg-white text-xl p-2 text-teal-800 font-semibold mt-5">
+            Question: What do you mean by REST API?.</p>
+            <p class="bg-teal-100 mt-5 p-2 text-xl">
+              <span class="font-semibold">Ans :</span>
+              Representational State Transfer Application Programming Interface is referred to as REST API. It is a method of designing networked applications. REST is a collection of guidelines and restrictions that determine how online services should be organized and communicate with one another, not a particular technology or protocol.
+<br>REST isolates the client (the API consumer) from the server (the API provider), allowing each to develop on its own. This division of duties encourages system scalability and makes development easier.
+<br>Whenever a client sends a request to a server, the server must get all the information required to comprehend and handle the request. In-between requests, the client's status shouldn't be recorded by the server. Due to their high scalability and simplicity, REST APIs.
+<br>Resources in REST are denoted by nouns (e.g., /users, /products), and they can be altered using conventional HTTP techniques. The data objects or entities that the API exposes can be considered resources.
+<br>The information required to process each request made by a client to a server must be self-contained in the request and included in it. It is not advisable for the server to interpret current requests based on prior requests or sessions.
+<br>RESTful interactions are stateless, therefore each request sent by a client to a server must include all the data required to comprehend and fulfill it. The server shouldn't process the current request based on previous ones.
+
+            </p>
+  </article>
 </body>
 </html>
