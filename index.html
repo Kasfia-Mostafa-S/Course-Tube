@@ -15,8 +15,8 @@
               <div class="flex justify-center">
                 <img src="image/Logo.png" alt="">
               </div>
-              <div class="flex justify-center id="sort-by-views" >
-                <button class='btn bg-gray-300 w-40 ' >Sort by view</button>
+              <div class="flex justify-center" id="sort-by-views">
+                <button class='btn bg-gray-300 w-40 normal-case' onclick="handleShowAll()">Sort by view</button>
               </div>
               <div class="flex justify-center">
                 <a href="http://127.0.0.1:5500/blog.html" target="_blank" class="btn btn-error normal-case text-white w-40">Blog</a>
@@ -29,25 +29,15 @@
       <!-- tab -->
         <section class="flex justify-center">
           <div >
-            <div class="tabs" id="tab-container">
+            <div class="tabs gap-5" id="tab-container">
        
-            </div>
           </div>
         </section>
 
         <!-- videos -->
         <section>
-                <div class="grid grid-cols-4" id="videos-container"></div>
-                  <div class="hidden" id="noDataAvailable">
-                    <div class='flex justify-center items-center'>
-                      <div class="mt-10">
-                      <div class="flex justify-center">
-                      <img src="image/Icon.png">
-                     </div>
-                     <p class="text-4xl text-semibold text-center mt-10">Oops!! Sorry, There is no content here</p>
-                     </div>
-                     </div>
-                  </div>
+                <div class="grid grid-cols-4 " id="videos-container"></div>
+                <div class='hidden' id="noData"></div>
             
         </section>
     
