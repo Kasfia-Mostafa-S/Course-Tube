@@ -21,20 +21,11 @@ const showVideos = async (videoId) =>{
    const eachVideo = document.getElementById('videos-container');
    
    eachVideo.innerHTML = "";
-
+   
    if(data.data.length === 0){
-     eachVideo.classList.remove('grid grid-cols-4')
-     eachVideo.innerHTML = `
-    <div class=''>
-    <div class="mt-10" flex justify-center items-center>
-    <div class="flex justify-center">
-     <img src="image/Icon.png">
-    </div>
-    <p class="text-4xl text-semibold text-center mt-10">Oops!! Sorry, There is no content here</p>
-    </div>
-    </div>
-    `
-    // eachVideo.appendChild(contain);
+
+     const noData = document.getElementById('noDataAvailable')
+     noData.classList.remove('hidden')
   }
    else{
    data.data.forEach(contains => {
